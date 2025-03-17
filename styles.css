@@ -1,0 +1,72 @@
+:root {
+    --oxford-blue: #002147;
+    --prussian-blue: #003153;
+    --light-gray: #f8f9fa;
+}
+
+.bg-oxford-blue {
+    background-color: var(--oxford-blue);
+}
+
+.text-oxford-blue {
+    color: var(--oxford-blue);
+}
+
+/* Academic typography styles */
+body {
+    font-family: 'Georgia', serif;
+    line-height: 1.6;
+}
+
+h1, h2, h3 {
+    font-family: 'Palatino Linotype', 'Book Antiqua', serif;
+    font-weight: 600;
+}
+
+/* Section styling */
+section {
+    padding: 2rem 0;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+/* Card shadow effect */
+.shadow-xl {
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .flex-row {
+        flex-direction: column;
+    }
+    
+    nav .hidden {
+        display: none;
+    }
+    
+    section {
+        padding: 1.5rem 0;
+    }
+}
+
+/* Link hover transitions */
+a {
+    transition: color 0.3s ease;
+}
+
+/* Academic color scheme */
+.bg-academic {
+    background: linear-gradient(135deg, var(--oxford-blue), var(--prussian-blue));
+}
+
+/* Print styles */
+@media print {
+    nav, .shadow {
+        display: none;
+    }
+    
+    body {
+        font-size: 12pt;
+        line-height: 1.4;
+    }
+}

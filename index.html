@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr. Chen Wei - Academic Profile</title>
+    <link href="https://cdn.tailwindcss.com" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="bg-slate-50">
+    <nav class="bg-oxford-blue shadow-lg">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="flex justify-between items-center py-4">
+                <a href="#" class="text-white text-xl font-semibold">Dr. Chen Wei</a>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#about" class="text-slate-200 hover:text-white transition">About</a>
+                    <a href="#education" class="text-slate-200 hover:text-white transition">Education</a>
+                    <a href="#honors" class="text-slate-200 hover:text-white transition">Honors</a>
+                    <a href="#contact" class="text-slate-200 hover:text-white transition">Contact</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main class="max-w-6xl mx-auto px-4 py-12">
+        <section id="about" class="mb-20">
+            <div class="flex flex-col md:flex-row items-center gap-8">
+                <img src="https://via.placeholder.com/200x200/1e3a5a/ffffff?text=Dr.Chen" 
+                     alt="Profile" 
+                     class="rounded-full w-48 h-48 object-cover shadow-xl">
+                <div>
+                    <h1 class="text-4xl font-bold text-oxford-blue mb-4">Dr. Chen Wei</h1>
+                    <p class="text-lg text-slate-600 mb-4">
+                        Postdoctoral Researcher in Computational Materials Science<br>
+                        Stanford University
+                    </p>
+                    <p class="text-slate-600">
+                        PhD in Materials Science and Engineering (2024)<br>
+                        Research focus on machine learning applications in nanomaterials design
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="education" class="mb-20">
+            <h2 class="text-3xl font-bold text-oxford-blue mb-8">Education</h2>
+            <div class="space-y-6">
+                <div class="bg-white p-6 rounded-lg shadow">
+                    <h3 class="text-xl font-semibold">Ph.D. in Materials Science and Engineering</h3>
+                    <p class="text-slate-600 mt-2">Massachusetts Institute of Technology | 2019-2024</p>
+                    <p class="mt-2">Thesis: <em>"Deep Learning Approaches for High-Throughput Materials Discovery"</em></p>
+                </div>
+                
+                <div class="bg-white p-6 rounded-lg shadow">
+                    <h3 class="text-xl font-semibold">B.S. in Physics</h3>
+                    <p class="text-slate-600 mt-2">Peking University | 2015-2019</p>
+                    <p class="mt-2">GPA: 3.98/4.0 | Rank: 1/120</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="honors" class="mb-20">
+            <h2 class="text-3xl font-bold text-oxford-blue mb-8">Honors & Awards</h2>
+            <div class="grid md:grid-cols-2 gap-6">
+                <div class="bg-white p-6 rounded-lg shadow">
+                    <h3 class="font-semibold">MIT Presidential Fellowship</h3>
+                    <p class="text-slate-600 mt-2">2021-2023</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow">
+                    <h3 class="font-semibold">MRS Graduate Student Award</h3>
+                    <p class="text-slate-600 mt-2">Fall 2022</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow">
+                    <h3 class="font-semibold">Outstanding Graduate Researcher Award</h3>
+                    <p class="text-slate-600 mt-2">MIT DMSE, 2023</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow">
+                    <h3 class="font-semibold">National Scholarship (China)</h3>
+                    <p class="text-slate-600 mt-2">2017, 2018</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="mb-20">
+            <h2 class="text-3xl font-bold text-oxford-blue mb-8">Contact</h2>
+            <div class="bg-white p-6 rounded-lg shadow">
+                <div class="flex flex-col space-y-4">
+                    <div class="flex items-center space-x-4">
+                        <i class="fas fa-envelope text-oxford-blue w-6"></i>
+                        <a href="mailto:chen.wei@stanford.edu" class="text-slate-600 hover:text-oxford-blue">chen.wei@stanford.edu</a>
+                    </div>
+                    <div class="flex items-center space-x-4">
+                        <i class="fas fa-graduation-cap text-oxford-blue w-6"></i>
+                        <a href="https://scholar.google.com/citations?user=example" 
+                           class="text-slate-600 hover:text-oxford-blue"
+                           target="_blank">Google Scholar Profile</a>
+                    </div>
+                    <div class="flex items-center space-x-4">
+                        <i class="fab fa-linkedin text-oxford-blue w-6"></i>
+                        <a href="https://www.linkedin.com/in/example" 
+                           class="text-slate-600 hover:text-oxford-blue"
+                           target="_blank">LinkedIn Profile</a>
+                    </div>
+                    <div class="flex items-center space-x-4">
+                        <i class="fas fa-university text-oxford-blue w-6"></i>
+                        <span class="text-slate-600">Shriram 236, Stanford University</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
